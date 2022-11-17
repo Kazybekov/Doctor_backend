@@ -12,6 +12,17 @@ app.use(express.json()); //req.body
 
 //create a todo
 
+app.post("/", async (req, res) => {
+  try {
+    const newTodo = await pool.query(
+      "CREATE TABLE doctor(email VARCHAR(60) PRIMARY KEY, degree VARCHAR(20), FOREIGN KEY (email) REFERENCES users(email));"
+    );
+
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
 app.post("/doctor", async (req, res) => {
   try {
 
