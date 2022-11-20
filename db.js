@@ -25,7 +25,10 @@ const pool = new Pool({
   password:"78b885d1ce8cc24a8e2d7d215104af75ea71ae773ace9322b52aac02d8177612",
   host: "ec2-99-80-170-190.eu-west-1.compute.amazonaws.com",
   port: 5432,
-  database: "d23sprlngt6rat"
+  database: "d23sprlngt6rat",
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 module.exports = pool;
