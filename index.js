@@ -12,7 +12,7 @@ app.use(express.json()); //req.body
 
 //create a todo
 
-app.post("/", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const newTodo = await pool.query(
       "CREATE TABLE IF NOT EXISTS doctor(email VARCHAR(60) PRIMARY KEY, degree VARCHAR(20));"
