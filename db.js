@@ -21,11 +21,11 @@ const Pool = require("pg").Pool;
 
 
 const pool = new Pool({
-  user: "bycfhlnxxrbxkd",
-  password:"78b885d1ce8cc24a8e2d7d215104af75ea71ae773ace9322b52aac02d8177612",
-  host: "ec2-99-80-170-190.eu-west-1.compute.amazonaws.com",
+  user: "yjfdmaxgseotbl",
+  password:"c98e08f01ea04095693a642824a81cccfe0fd3fa0f1aac673b0b6372e1bda633",
+  host: "ec2-34-251-115-141.eu-west-1.compute.amazonaws.com",
   port: 5432,
-  database: "d23sprlngt6rat",
+  database: "d5q26cdvejmnet",
   ssl: {
     rejectUnauthorized: false
   }
